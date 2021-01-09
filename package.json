@@ -8,7 +8,7 @@
   "scripts": {
     "build": "webpack -c webpack.config.js --mode production",
     "dev": "webpack serve",
-    "test": "jest --collect-coverage"
+    "test": "jest"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
