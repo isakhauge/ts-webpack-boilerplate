@@ -1,4 +1,5 @@
 const path = require('path')
+const relPath = relativePath => path.resolve(__dirname, arg)
 
 module.exports = {
     mode: "development",
@@ -18,20 +19,22 @@ module.exports = {
                     {
                         loader: "babel-loader",
                         options: {
-                            presets: [
-                                '@babel/preset-env',
-                                '@babel/preset-typescript'
-                            ]
+                            presets: ['@babel/preset-env', '@babel/preset-typescript']
                         }
                     }
                 ],
-                include: path.resolve(__dirname, 'src')
+                include: relPath('src')
             },
             {
                 test: /\.ts$/,
                 use: ['ts-loader'],
-                include: path.resolve(__dirname, 'src')
+                include: relPath('src')
             }
         ]
+    },
+    devServer: {
+        contentBase: relPath('dist'),
+        port: 9000,
+        hot: true
     }
 }
