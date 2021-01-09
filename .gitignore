@@ -102,3 +102,12 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Jest Coverage
+coverage/
+
+# IntelliJ
+.idea
+
+# macOS FS files
+.DS_Store
