@@ -17,20 +17,16 @@ Initialize your own git.
 cd <your-project-path> && git init
 ```
 Install dependencies.
-```bash
-# Yarn
-yarn install
-
-# NPM
-npm install
-```
+| Yarn | NPM |
+| -- | -- |
+| `yarn install` | `npm install` |
 
 ## Make it your own
 Do not forget to edit the `package.json` file to reflect your own project and you as an author.
 
 ## Included scripts
 | Alias | What it does |
-| --- | --- |
+| -- | -- |
 | build | Builds the project in `production` mode. |
 | dev | Builds the project in `development` mode. |
 | dev:analyze | Just like `dev` but runs an instance of WebpackBundleAnalyzer at `http://localhost:8888`
