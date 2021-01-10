@@ -1,11 +1,11 @@
 const path = require('path')
-const relPath = relativePath => path.resolve(__dirname, arg)
+const relPath = relativePath => path.resolve(__dirname, relativePath)
 
 module.exports = {
     mode: "development",
-    entry: path.resolve(__dirname, 'src/App.ts'),
+    entry: relPath('src/App.ts'),
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: relPath('dist'),
         filename: 'bundle.js'
     },
     resolve: {
@@ -14,7 +14,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.(js)$/,
                 use: [
                     {
                         loader: "babel-loader",
@@ -26,7 +26,7 @@ module.exports = {
                 include: relPath('src')
             },
             {
-                test: /\.ts$/,
+                test: /\.(ts)$/,
                 use: ['ts-loader'],
                 include: relPath('src')
             }
