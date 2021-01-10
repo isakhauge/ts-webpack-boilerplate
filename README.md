@@ -30,5 +30,6 @@ npm install
 | --- | --- |
 | build | Builds the project in `production` mode. |
 | dev | Builds the project in `development` mode. |
+| dev:analyze | Just like `dev` but runs an instance of WebpackBundleAnalyzer at `http://localhost:8888`
 | serve | Runs Webpack Development server with hot reloading at `http://localhost:9000` |
 | test | Runs Jest testing of your defined TypeScript tests, located in `<project-root>/test/` |
