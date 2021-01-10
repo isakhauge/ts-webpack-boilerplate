@@ -26,7 +26,7 @@ npm install
 ```
 
 ## Included scripts
-| Alias | What id does |
+| Alias | What it does |
 | --- | --- |
 | build | Builds the project in `production` mode. |
 | dev | Builds the project in `development` mode. |
