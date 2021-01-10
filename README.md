@@ -25,6 +25,9 @@ yarn install
 npm install
 ```
 
+## Make it your own
+Do not forget to edit the `package.json` file to reflect your own project and you as an author.
+
 ## Included scripts
 | Alias | What it does |
 | --- | --- |
